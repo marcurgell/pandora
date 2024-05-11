@@ -50,13 +50,17 @@ theme.set_highlights = function()
   local cp = '#9c0582'; --class purple
   local gv = '#80130f'; -- private variable granate
   local b = '#000000'; -- Black
+  local o = '#ff9f30'; -- Orange
 
   hl(0, '@punctuation.special', { fg = '#418262', bg = n })
+  hl(0, '@type.cpp', { bold = false }) 
   hl(0, '@type.builtin', { fg = vc, bg = n }) 
+  hl(0, '@type.builtin.cpp', { fg = vc, bg = n, bold = false }) 
   hl(0, '@comment', { fg = '#019149', bg = n, italic=true})
 
   --hl(0, '@variable', { fg = pcb, bg = n })
   --hl(0, '@variable.c', { fg = pcb, bg = n })
+  hl(0, '@label.cpp', { fg = cp, bg = n, bold = false })
   hl(0, '@lsp.type.variable.c', { fg = pcb, bg = n })
   hl(0, '@lsp.type.variable.cpp', { fg = pcb, bg = n })
   hl(0, '@lsp.type.class.cpp', { fg = cp, bg = n,bold = false })
@@ -66,11 +70,13 @@ theme.set_highlights = function()
   hl(0, '@lsp.type.type.cpp', { fg = pcb, bg = n,bold = false })
   hl(0, '@lsp.type.property.cpp', { fg = gv, bg = n,bold = false })
   hl(0, '@lsp.typemod.variable.static.cpp', { fg = gv, bg = n,bold = false })
+  hl(0, '@lsp.typemod.function.fileScope.cpp', { fg = o, bg = n,bold = false })
 
   --hl(0, '@constant', { fg = '#80130f', bg = n })
   hl(0, '@constant.builtin.cpp', { fg = vc, bg = n })
   hl(0, '@lsp.type.enumMember.c', { fg = cp, bg = n })
   hl(0, '@lsp.type.enumMember.cpp', { fg = cp, bg = n })
+  hl(0, '@lsp.type.enum.cpp', { fg = cp, bg = n, bold = false })
   --hl(0, '@type', { fg = pcb, bg = n,bold=true })
   hl(0, '@string', { fg = '#078f4b', bg = n })
   hl(0, '@number', { fg = pcb, bg = n }) --literal numbers
