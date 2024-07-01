@@ -29,6 +29,7 @@ theme.set_highlights = function()
   hl(0, 'SignColumn', { fg = n , bg =  '#FFFFFF' })
   hl(0, 'IncSearch', { fg = n , bg =  mainGreen })
   hl(0, 'Search', { fg = n , bg =  mainGreen })
+  hl(0, 'CurSearch', { fg = n , bg =  mainGreen })
   hl(0, 'LineNr', { fg = GrayDisabled , bg =  n })
   hl(0, 'MatchParen', { fg = n , bg =  mainGreen })
 
